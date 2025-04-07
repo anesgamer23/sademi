@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(45deg, #7cb9fe, #007aff, #7cb9fe);
+    padding: 20px 40px;
+    position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+    display: fixed;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Right Navigation (Arabic Text) */
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Center Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo span {
+    font-size: 30px;
+    color: #ff9100;
+    font-weight: bold;
+}
+
+/* Left Navigation (Icons and Currency) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-left .currency {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-left .icon {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+

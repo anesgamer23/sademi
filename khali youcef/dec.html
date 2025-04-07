@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingénieur en Maintenance Industrielle</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+            color: #333;
+            overflow-x: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin: 20px 0;
+            color: #ff5722;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #2196f3;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #ff5722;
+            margin-top: 5px;
+            animation: slideIn 1s ease-out;
+        }
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding-left: 10px;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        ul li::before {
+            content: "✔";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            background-color: #ff9800;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #f57c00;
+            transform: scale(1.05);
+        }
+
+        .bottom-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2196f3;
+            color: #ffffff;
+            border: none;
+            border-radius:50% ;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .bottom-button:hover {
+            background-color: #1976d2;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                width: 0;
+            }
+            to {
+                width: 50px;
+            }
+        }
+        @keyframes slideFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+   
+    .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff9100;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9100;
+}
+
+.social { 
+    width: 30px; height: 30px;
+    margin-right: 10px;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.socials{
+   border: none;
+   box-shadow: none;
+   width: 30px; height: 30px;
+    margin-right: 10px;
+
+}
+   
+   
+
+   
+   </style>
+</head>
+<body>
+    <h1>Ingénieur en Maintenance Industrielle</h1>
+    <button class="button" onclick="animateSections()">Découvrir les Détails</button>
+
+    <div class="section" style="animation-delay: 0.2s;">
+        <h2>Description Professionnelle</h2>
+        <p>
+            L’ingénieur en maintenance industrielle joue un rôle clé dans la fiabilité, la durabilité et l’optimisation des équipements industriels.
+            Il/elle est chargé(e) d’assurer le bon fonctionnement des machines, d’anticiper les pannes et de garantir la continuité de la production dans un environnement technique exigeant.
+        </p>
+    </div>
+
+    <div class="section" style="animation-delay: 0.4s;">
+        <h2>Missions Principales</h2>
+        <h3>Gestion des opérations de maintenance :</h3>
+        <ul>
+            <li>Élaboration et mise en œuvre des plans de maintenance préventive et corrective.</li>
+            <li>Analyse des performances des équipements (suivi des indicateurs tels que le MTBF et le MTTR).</li>
+            <li>Coordination des interventions techniques et supervision des équipes.</li>
+        </ul>
+        <h3>Diagnostic et résolution des pannes :</h3>
+        <ul>
+            <li>Identification rapide des causes de dysfonctionnement.</li>
+            <li>Mise en œuvre des solutions adaptées pour minimiser les arrêts de production.</li>
+        </ul>
+    </div>
+
+    <div class="section" style="animation-delay: 0.6s;">
+        <h2>Compétences Clés</h2>
+        <ul>
+            <li>Maîtrise des systèmes mécaniques, électriques, hydrauliques et pneumatiques.</li>
+            <li>Connaissance approfondie des logiciels de GMAO.</li>
+            <li>Capacités d’analyse pour résoudre des problèmes complexes et optimiser les processus.</li>
+            <li>Leadership et gestion d’équipes multidisciplinaires.</li>
+        </ul>
+    </div>
+
+    <!-- Bouton en bas -->
+    <button class="bottom-button" onclick="changerpage()">🔙</button>
+  <script>
+  function changerpage()
+{   
+    window.location.href="index.html" 
+  } 
+</script>
+    <script>
+        function animateSections() {
+            const sections = document.querySelectorAll('.section');
+            const listItems = document.querySelectorAll('ul li');
+
+            sections.forEach((section, index) => {
+                section.style.animation = `slideFromRight 0.8s ease-out ${index * 0.2}s forwards`;
+            });
+
+            listItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.animation = `slideFromLeft 0.5s ease-out forwards`;
+                }, index * 100);
+            });
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p> ✅ Automatisation industrielle </p>
+             <p> ✅ Électricité industrielle</p>
+              <p>Montage d'équipements</p>
+            </div>
+        
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#facebook"><img class="social" src="face.jpg"></a>
+                <a href="#linked in"><img class="socials" src="lind.jpg"></a>
+               
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+         
+        
+        <p>&copy; <strong>SADMI</strong>. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
